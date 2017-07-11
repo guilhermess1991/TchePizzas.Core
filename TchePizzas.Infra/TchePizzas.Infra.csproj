@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.6</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Repositories\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TchePizzas.Domain\TchePizzas.Domain.csproj" />
+    <ProjectReference Include="..\TchePizzas.Shared\TchePizzas.Shared.csproj" />
+  </ItemGroup>
+</Project>

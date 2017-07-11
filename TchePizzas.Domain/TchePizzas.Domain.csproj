@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.6</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Entities\" />
+    <Folder Include="ValueObjects\" />
+    <Folder Include="Commands\" />
+    <Folder Include="Commands\Input\" />
+    <Folder Include="Commands\Handler\" />
+    <Folder Include="Commands\Results\" />
+    <Folder Include="Repositories\" />
+    <Folder Include="Enums\" />
+    <Folder Include="Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Entities\Base\BaseEntity.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="FluentValidator.Core" Version="1.0.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TchePizzas.Shared\TchePizzas.Shared.csproj" />
+  </ItemGroup>
+</Project>

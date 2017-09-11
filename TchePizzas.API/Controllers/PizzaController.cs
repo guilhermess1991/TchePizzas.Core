@@ -21,6 +21,7 @@ namespace TchePizzas.API.Controllers
         [Route("v1/Pizza")]
         public IActionResult Get()
         {
+            
             return Ok(_pizzaRepository.Get(Guid.NewGuid()));
         }
 
